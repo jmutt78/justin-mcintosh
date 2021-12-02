@@ -1,8 +1,10 @@
 import React from "react"
 import Link from "next/link"
 import NextImage from "./image"
+import styled from "styled-components"
 
 const Card = ({ article }) => {
+  console.log(article)
   return (
     <Link href={`/article/${article.attributes.slug}`}>
       <a className="uk-link-reset">
