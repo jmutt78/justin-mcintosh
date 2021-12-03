@@ -6,10 +6,11 @@ const Profile = ({ avatar }) => {
 
   return (
     <NextImage
-      layout="responsive"
       className="profile-image"
-      width={25}
-      height={25}
+      width={50}
+      height={50}
+      layout="responsive"
+      quality={65}
       objectFit="cover"
       src={getStrapiMedia(avatar)}
       alt={alternativeText || ""}
