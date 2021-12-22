@@ -9,7 +9,7 @@ export default () => (
           <h4>
             I am your design and development partner. My purpose and values
             drive me; I continually improve my process and do my best work in
-            strong partnerships with you.
+            strong partnerships with you.s
           </h4>
         </div>
       </div>
