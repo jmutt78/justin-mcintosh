@@ -1,7 +1,6 @@
-import React from "react"
-import Link from "next/link"
-import NextImage from "./image"
-import styled from "styled-components"
+import React from 'react'
+import Link from 'next/link'
+import NextImage from './image'
 
 const Card = ({ article }) => {
   console.log(article)

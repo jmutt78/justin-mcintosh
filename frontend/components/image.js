@@ -1,5 +1,5 @@
-import { getStrapiMedia } from "../lib/media"
-import NextImage from "next/image"
+import { getStrapiMedia } from '../lib/media'
+import NextImage from 'next/image'
 
 const Image = ({ image, style }) => {
   const { url, alternativeText, width, height } = image.data.attributes
@@ -16,7 +16,7 @@ const Image = ({ image, style }) => {
       height={height}
       objectFit="contain"
       src={getStrapiMedia(image)}
-      alt={alternativeText || ""}
+      alt={alternativeText || ''}
     />
   )
 }

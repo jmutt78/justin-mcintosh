@@ -13,6 +13,7 @@ a {
 h1 {
   font-family: Staatliches;
   font-size: 120px;
+  color: #1c0947;
 }
 
 #category {
@@ -49,8 +50,6 @@ img:hover {
 }
 
 
-
-
 .profile-container {
   margin-top: 30px;
   margin: 0 auto;
@@ -65,5 +64,94 @@ img:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+}
+
+.profile-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  h2 {
+    display: flex;
+    margin: 0;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    line-height: 1.125;
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1rem !important;
+  }
+}
+
+.title-container {
+  display: flex;
+}
+
+.svg-container {
+  width: 140px;
+  margin-left: 10px;
+
+  img {
+    filter: invert(9%) sepia(35%) saturate(4514%) hue-rotate(246deg) brightness(91%) contrast(110%);
+  }
+}
+
+.about-root {
+  width: 100%;
+  size: 1800px;
+  background-color: #1c0947;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.about-container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.about-column {
+  display: flex;
+  text-align: center;
+  max-width: 900px;
+  align-self: center;
+  width: 100%;
+  padding: 100px 0px 50px 0px;
+
+  h2 {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.125;
+    font-size: 2rem !important;
+    display: inline-block;
+    border-bottom: 2px solid #f97304;
+  }
+
+  h4 {
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.25rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 500px) {
+    h4 {
+      padding: 0px 15px 0px 15px;
+    }
   }
 }

@@ -1,5 +1,5 @@
-import { getStrapiMedia } from "../lib/media"
-import NextImage from "next/image"
+import { getStrapiMedia } from '../lib/media'
+import NextImage from 'next/image'
 
 const Profile = ({ avatar }) => {
   const { url, alternativeText, width, height } = avatar.data.attributes
@@ -13,7 +13,7 @@ const Profile = ({ avatar }) => {
       quality={65}
       objectFit="cover"
       src={getStrapiMedia(avatar)}
-      alt={alternativeText || ""}
+      alt={alternativeText || ''}
     />
   )
 }

@@ -14,7 +14,7 @@
   "attributes": {
     "profile_pic": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
