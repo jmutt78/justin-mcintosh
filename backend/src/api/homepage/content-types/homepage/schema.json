@@ -44,6 +44,31 @@
         "files",
         "videos"
       ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "language": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.language"
+    },
+    "frontend": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.frontend"
+    },
+    "backend": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.backend"
     }
   }
 }
