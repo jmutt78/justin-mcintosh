@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_backends",
+  "info": {
+    "displayName": "backend",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "backImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

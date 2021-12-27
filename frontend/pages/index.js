@@ -1,18 +1,21 @@
-import React from 'react'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-import About from '../components/about'
-import { fetchAPI } from '../lib/api'
-import Profile from '../components/profile'
 import NextImage from 'next/image'
+import React from 'react'
+import About from '../components/about'
+import Layout from '../components/layout'
+import Profile from '../components/profile'
+import Language from '../components/language'
+import Seo from '../components/seo'
+import { fetchAPI } from '../lib/api'
 import { getStrapiMedia } from '../lib/media'
 
 const Home = ({ articles, categories, homepage }) => {
   const profile = homepage.attributes.profile
   const landscape = homepage.attributes.landscape
+  const logo = homepage.attributes.logo
+  const language = homepage.attributes.language
 
   return (
-    <Layout categories={categories}>
+    <Layout categories={categories} logo={logo}>
       <Seo seo={homepage.attributes.seo} />
       <div>
         <div className="uk-container uk-container-large title-container">
@@ -41,6 +44,16 @@ const Home = ({ articles, categories, homepage }) => {
           </h3>
         </div>
         <About />
+        <div className="tech-container">
+          <h2>Technology</h2>
+        </div>
+        <div>
+          <Language language={language} />
+        </div>
+
+        <div className="work-container"></div>
+        <div className="projects-container"></div>
+        <div className="ed-container"></div>
       </div>
     </Layout>
   )
@@ -56,8 +69,12 @@ export async function getStaticProps() {
         populate: {
           hero: '*',
           seo: { populate: '*' },
-          profile: { populate: '*' },
-          landscape: { populate: '*' },
+          profile: '*',
+          landscape: '*',
+          logo: '*',
+          language: { populate: '*' },
+          frontend: { populate: '*' },
+          backend: { populate: '*' },
         },
       }),
     ])

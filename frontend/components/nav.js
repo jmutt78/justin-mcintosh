@@ -1,15 +1,26 @@
-import React from "react"
-import Link from "next/link"
+import React from 'react'
+import Link from 'next/link'
+import NextImage from 'next/image'
+import { getStrapiMedia } from '../lib/media'
 
-const Nav = ({ categories }) => {
+const Nav = ({ categories, logo }) => {
   return (
     <div>
-      <nav className="uk-navbar-container" data-uk-navbar>
+      <nav className="uk-navbar-container uk-navbar">
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
               <Link href="/">
-                <a>Strapi Blog</a>
+                <div className="logo-container">
+                  <NextImage
+                    className="logo"
+                    width={30}
+                    height={30}
+                    layout="responsive"
+                    src={getStrapiMedia(logo)}
+                    alt={logo.alternativeText || ''}
+                  />
+                </div>
               </Link>
             </li>
           </ul>

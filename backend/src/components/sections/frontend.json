@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_frontends",
+  "info": {
+    "displayName": "frontend",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "frontImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
