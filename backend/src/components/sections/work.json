@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_works",
+  "info": {
+    "displayName": "work",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "management",
+        "tech"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "dates": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.description"
+    }
+  }
+}

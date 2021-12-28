@@ -49,7 +49,7 @@ const Home = ({ articles, categories, homepage }) => {
         </div>
         <About />
         <div className="tech-container">
-          <h2>Technology</h2>
+          <h2>Skills</h2>
         </div>
         <div className="tech-column">
           <BoxContainer data={language} title="Language" />
