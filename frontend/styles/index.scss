@@ -16,6 +16,7 @@ h1 {
   color: #1c0947;
 }
 
+
 #category {
   font-family: Staatliches;
   font-weight: 500;
@@ -111,14 +112,11 @@ img:hover {
 }
 
 .about-root {
-  width: 100%;
-  size: 1800px;
   background-color: #1c0947;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 130px;
 }
 
 .about-container {
@@ -134,7 +132,7 @@ img:hover {
   max-width: 900px;
   align-self: center;
   width: 100%;
-  padding: 100px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 
   h2 {
     color: white;
@@ -178,8 +176,13 @@ img:hover {
     font-size: 2rem;
 
   }
+}
 
-
+.tech-column {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 
 .lang-root {
@@ -188,19 +191,15 @@ img:hover {
   }
 }
 
-.indy-lang-wrapper {
+.indy-card-wrapper {
   display: flex;
   margin-bottom: 10px;
   margin-top: 10px;
 
-  // align-items: center;
-  // justify-content: center;
-  // margin-top: 30px;
-  // margin-bottom: 30px;
 }
 
-.lang-image-container {
-  width: 65px;
+.card-image-contianer {
+  width: 30px;
   margin-right: 20px;
 }
 
@@ -208,7 +207,7 @@ img:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  min-width: 350px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -227,9 +226,29 @@ img:hover {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.2;
+    margin-top: 7px;
   }
+
+}
+
+@media (max-width: 923px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .svg-container {
+    display: flex;
+
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 100px;
+  }
+
 
 }

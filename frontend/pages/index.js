@@ -3,7 +3,7 @@ import React from 'react'
 import About from '../components/about'
 import Layout from '../components/layout'
 import Profile from '../components/profile'
-import Language from '../components/language'
+import BoxContainer from '../components/BoxContainer'
 import Seo from '../components/seo'
 import { fetchAPI } from '../lib/api'
 import { getStrapiMedia } from '../lib/media'
@@ -47,8 +47,10 @@ const Home = ({ articles, categories, homepage }) => {
         <div className="tech-container">
           <h2>Technology</h2>
         </div>
-        <div>
-          <Language language={language} />
+        <div className="tech-column">
+          <BoxContainer data={language} title="Language" />
+          <BoxContainer data={language} title="Frontend" />
+          <BoxContainer data={language} title="Backend" />
         </div>
 
         <div className="work-container"></div>

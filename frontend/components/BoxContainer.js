@@ -1,15 +1,15 @@
 import { getStrapiMedia } from '../lib/media'
 import NextImage from 'next/image'
 
-const Language = ({ language }) => {
+const BoxContainer = ({ data, title }) => {
   return (
     <div className="card">
       <div className="card-body">
-        <h3>Languages</h3>
+        <h3>{title}</h3>
         <ul>
-          {language.map(({ name, langImage }, index) => (
-            <li key={index} className="indy-lang-wrapper">
-              <div className="lang-image-container">
+          {data.map(({ name, langImage }, index) => (
+            <li key={index} className="indy-card-wrapper">
+              <div className="card-image-contianer">
                 <NextImage
                   //   className="profile-image"
                   width={50}
@@ -29,4 +29,4 @@ const Language = ({ language }) => {
     </div>
   )
 }
-export default Language
+export default BoxContainer
