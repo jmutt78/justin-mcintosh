@@ -10,14 +10,15 @@
     "name": {
       "type": "string"
     },
-    "frontImage": {
+    "langImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

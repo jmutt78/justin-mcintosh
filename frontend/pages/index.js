@@ -13,6 +13,10 @@ const Home = ({ articles, categories, homepage }) => {
   const landscape = homepage.attributes.landscape
   const logo = homepage.attributes.logo
   const language = homepage.attributes.language
+  const frontend = homepage.attributes.frontend
+  const backend = homepage.attributes.backend
+
+  console.log(homepage)
 
   return (
     <Layout categories={categories} logo={logo}>
@@ -49,8 +53,8 @@ const Home = ({ articles, categories, homepage }) => {
         </div>
         <div className="tech-column">
           <BoxContainer data={language} title="Language" />
-          <BoxContainer data={language} title="Frontend" />
-          <BoxContainer data={language} title="Backend" />
+          <BoxContainer data={frontend} title="Frontend" />
+          <BoxContainer data={backend} title="Backend - DB - Cloud" />
         </div>
 
         <div className="work-container"></div>

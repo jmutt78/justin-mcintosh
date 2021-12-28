@@ -12,10 +12,9 @@ const BoxContainer = ({ data, title }) => {
               <div className="card-image-contianer">
                 <NextImage
                   //   className="profile-image"
-                  width={50}
-                  height={50}
+                  width={250}
+                  height={250}
                   layout="responsive"
-                  quality={65}
                   objectFit="cover"
                   src={getStrapiMedia(langImage)}
                   alt={langImage.data.alternativeText || ''}
