@@ -4,6 +4,7 @@ import About from '../components/about'
 import Layout from '../components/layout'
 import Profile from '../components/profile'
 import BoxContainer from '../components/BoxContainer'
+import Resume from '../components/resume'
 import Seo from '../components/seo'
 import { fetchAPI } from '../lib/api'
 import { getStrapiMedia } from '../lib/media'
@@ -15,8 +16,7 @@ const Home = ({ articles, categories, homepage }) => {
   const language = homepage.attributes.language
   const frontend = homepage.attributes.frontend
   const backend = homepage.attributes.backend
-
-  console.log(homepage)
+  const work = homepage.attributes.work
 
   return (
     <Layout categories={categories} logo={logo}>
@@ -45,7 +45,7 @@ const Home = ({ articles, categories, homepage }) => {
           <h3>Always Be Learning</h3>
         </div>
         <About />
-        <div className="tech-container">
+        <div className="title-container">
           <h2>Technology Experience</h2>
         </div>
         <div className="tech-column">
@@ -53,10 +53,12 @@ const Home = ({ articles, categories, homepage }) => {
           <BoxContainer data={frontend} title="Frontend" />
           <BoxContainer data={backend} title="Backend - DB - Cloud" />
         </div>
-        <div className="tech-container">
+        <div className="title-container">
           <h2>Work Experience</h2>
         </div>
-        <div className="work-container"></div>
+        <div className="work-container">
+          <Resume work={work} />
+        </div>
         <div className="projects-container"></div>
         <div className="ed-container"></div>
       </div>
@@ -80,6 +82,7 @@ export async function getStaticProps() {
           language: { populate: '*' },
           frontend: { populate: '*' },
           backend: { populate: '*' },
+          work: { populate: '*' },
         },
       }),
     ])

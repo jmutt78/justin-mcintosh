@@ -11,7 +11,6 @@ const BoxContainer = ({ data, title }) => {
             <li key={index} className="indy-card-wrapper">
               <div className="card-image-contianer">
                 <NextImage
-                  //   className="profile-image"
                   width={250}
                   height={250}
                   layout="responsive"

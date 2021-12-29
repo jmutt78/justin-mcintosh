@@ -166,7 +166,7 @@ img:hover {
   cursor: pointer;
 }
 
-.tech-container {
+.title-container {
   display: flex;
   padding-top: 30px;
   margin-bottom: 20px;
@@ -233,7 +233,10 @@ img:hover {
     line-height: 1.2;
     margin-top: 7px;
   }
+}
 
+.work-container {
+  margin-top: 30px;
 }
 
 @media (max-width: 923px) {
@@ -251,6 +254,4 @@ img:hover {
   h1 {
     font-size: 100px;
   }
-
-
 }
