@@ -46,16 +46,14 @@ const Home = ({ articles, categories, homepage }) => {
         </div>
         <About />
         <div className="title-container">
-          <h2>Technology Experience</h2>
+          <h2>Experience</h2>
         </div>
         <div className="tech-column">
           <BoxContainer data={language} title="Language" />
           <BoxContainer data={frontend} title="Frontend" />
           <BoxContainer data={backend} title="Backend - DB - Cloud" />
         </div>
-        <div className="title-container">
-          <h2>Work Experience</h2>
-        </div>
+
         <div className="work-container">
           <Resume work={work} />
         </div>
