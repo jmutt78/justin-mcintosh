@@ -41,22 +41,21 @@ const Home = ({ articles, categories, homepage }) => {
           <Profile avatar={profile} />
         </div>
         <div className="profile-headline">
-          <h2>Your Trusted Partner in Software Development</h2>
-          <h3>
-            I build beautiful, functional websites and applications for
-            businesses because I love them.
-          </h3>
+          <h2>Full-Stack Software Engineer</h2>
+          <h3>Always Be Learning</h3>
         </div>
         <About />
         <div className="tech-container">
-          <h2>Skills</h2>
+          <h2>Technology Experience</h2>
         </div>
         <div className="tech-column">
           <BoxContainer data={language} title="Language" />
           <BoxContainer data={frontend} title="Frontend" />
           <BoxContainer data={backend} title="Backend - DB - Cloud" />
         </div>
-
+        <div className="tech-container">
+          <h2>Work Experience</h2>
+        </div>
         <div className="work-container"></div>
         <div className="projects-container"></div>
         <div className="ed-container"></div>

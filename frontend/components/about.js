@@ -7,9 +7,11 @@ const About = () => (
         <div>
           <h2>Hi, I'm Justin</h2>
           <h4>
-            I am your design and development partner. My purpose and values
-            drive me. I continually improve my process and do my best work in
-            strong partnerships with you.
+            I have 10+ years of management experience with 4+ years of
+            experience as a developer. I excel at collaborating in a
+            cross-functional environment while accomplishing tasks and achieving
+            goals independently. I have outstanding communication skills,
+            leadership ability, and business acumen.
           </h4>
         </div>
       </div>
