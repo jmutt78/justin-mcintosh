@@ -270,6 +270,86 @@ img:hover {
   display: flex;
 }
 
+.tie-container {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+
+}
+
+.title-root {
+  width: 100%;
+  size: 1800px;
+  background-color: #1c0947;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title-col {
+  display: flex;
+  text-align: center;
+  max-width: 900px;
+  align-self: center;
+  width: 100%;
+  padding: 100px 0px 50px 0px;
+
+  h2 {
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.125;
+    font-size: 2rem !important;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 2px solid #f97304;
+  }
+}
+
+.project-container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    color: #f97304;
+    font-weight: 500;
+  }
+}
+
+.liner {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 300px;
+
+}
+
+.project-wrapper {
+  border: 3px solid #1c0947;
+  margin-bottom: 10px;
+}
+
+.toolbar {
+  background-color: #1c0947;
+  height: 15px;
+  display: flex;
+  padding: 5px;
+}
+
+.square {
+
+  width: 10px;
+  height: 10px;
+  background-color: #f97304;
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
 @media (max-width: 923px) {
   h1 {
     font-size: 100px;
@@ -277,7 +357,7 @@ img:hover {
 
   .svg-container {
     display: flex;
-
+    flex-wrap: wrap;
   }
 }
 

@@ -6,6 +6,10 @@ import Profile from '../components/profile'
 import BoxContainer from '../components/BoxContainer'
 import Resume from '../components/resume'
 import Seo from '../components/seo'
+import Education from '../components/education'
+import Footer from '../components/footer'
+import Title from '../components/title'
+import Project from '../components/project'
 import { fetchAPI } from '../lib/api'
 import { getStrapiMedia } from '../lib/media'
 
@@ -17,13 +21,15 @@ const Home = ({ articles, categories, homepage }) => {
   const frontend = homepage.attributes.frontend
   const backend = homepage.attributes.backend
   const work = homepage.attributes.work
+  const education = homepage.attributes.education
+  const projects = homepage.attributes.projects
 
   return (
     <Layout categories={categories} logo={logo}>
       <Seo seo={homepage.attributes.seo} />
       <div>
         <div className="uk-container uk-container-large title-container">
-          <h1>{homepage.attributes.hero.title}</h1>{' '}
+          <h1>{homepage.attributes.hero.title}</h1>
           <div className="svg-container">
             <NextImage
               className="profile-image"
@@ -41,7 +47,7 @@ const Home = ({ articles, categories, homepage }) => {
           <Profile avatar={profile} />
         </div>
         <div className="profile-headline">
-          <h2>Full-Stack Software Engineer</h2>
+          <h2>Full Stack Software Engineer</h2>
           <h3>Always Be Learning</h3>
         </div>
         <About />
@@ -57,8 +63,16 @@ const Home = ({ articles, categories, homepage }) => {
         <div className="work-container">
           <Resume work={work} />
         </div>
-        <div className="projects-container"></div>
-        <div className="ed-container"></div>
+        <div className="work-container">
+          <Education education={education} />
+        </div>
+        <Title title="Projects" />
+        <div className="project-container">
+          {projects.map((project) => {
+            return <Project project={project} />
+          })}
+        </div>
+        <Footer />
       </div>
     </Layout>
   )
@@ -81,6 +95,8 @@ export async function getStaticProps() {
           frontend: { populate: '*' },
           backend: { populate: '*' },
           work: { populate: '*' },
+          education: { populate: '*' },
+          projects: { populate: '*' },
         },
       }),
     ])

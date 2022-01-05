@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_projects",
+  "info": {
+    "displayName": "projects",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "text"
+    },
+    "git": {
+      "type": "string"
+    }
+  }
+}

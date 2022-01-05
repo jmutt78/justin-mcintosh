@@ -74,6 +74,16 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.work"
+    },
+    "education": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.education"
+    },
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.projects"
     }
   }
 }
