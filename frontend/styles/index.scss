@@ -462,6 +462,14 @@ img:hover {
   }
 }
 
+.my-banner {
+  opacity: .8;
+}
+
+.banner-tow {
+  color: #1c0947 !important;
+  font-size: 63px !important;
+}
 
 
 @media (max-width: 923px) {
@@ -473,9 +481,19 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
   }
+
+  #banner {
+    margin: 20px;
+    height: 370px;
+  }
 }
 
 @media (max-width: 500px) {
+
+  #banner {
+    margin: 20px;
+    height: 291px;
+  }
 
   .liner {
     margin: 0px 0px 20px 0px;

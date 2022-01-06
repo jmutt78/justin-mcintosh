@@ -3,7 +3,7 @@ import Link from 'next/link'
 import NextImage from 'next/image'
 import { getStrapiMedia } from '../lib/media'
 
-const Nav = ({ categories, logo }) => {
+const Nav = ({ categories }) => {
   return (
     <div>
       <nav className="uk-navbar-container uk-navbar">
@@ -17,8 +17,7 @@ const Nav = ({ categories, logo }) => {
                     width={30}
                     height={30}
                     layout="responsive"
-                    src={getStrapiMedia(logo)}
-                    alt={logo.alternativeText || ''}
+                    src="/logo.svg"
                   />
                 </div>
               </Link>

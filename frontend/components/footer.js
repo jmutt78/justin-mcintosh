@@ -7,7 +7,6 @@ const Footer = ({ logo }) => {
     {
       image: (
         <NextImage
-          // className="profile-image"
           width={50}
           height={50}
           layout="responsive"
@@ -23,7 +22,6 @@ const Footer = ({ logo }) => {
     {
       image: (
         <NextImage
-          // className="profile-image"
           width={50}
           height={50}
           layout="responsive"
@@ -39,7 +37,6 @@ const Footer = ({ logo }) => {
     {
       image: (
         <NextImage
-          // className="profile-image"
           width={50}
           height={50}
           layout="responsive"
@@ -55,7 +52,6 @@ const Footer = ({ logo }) => {
     {
       image: (
         <NextImage
-          // className="profile-image"
           width={50}
           height={50}
           layout="responsive"
@@ -71,7 +67,6 @@ const Footer = ({ logo }) => {
     {
       image: (
         <NextImage
-          // className="profile-image"
           width={50}
           height={50}
           layout="responsive"
