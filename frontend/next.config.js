@@ -3,8 +3,8 @@
  */
 const nextConfig = {
   images: {
-    loader: "default",
-    domains: ["localhost"],
+    loader: 'default',
+    domains: ['localhost'],
   },
 }
 

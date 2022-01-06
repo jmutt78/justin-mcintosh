@@ -84,7 +84,7 @@ const Home = ({ articles, categories, homepage }) => {
             Drop Me a Line
           </a>
         </div>
-        <Footer />
+        <Footer logo={logo} />
       </div>
     </Layout>
   )

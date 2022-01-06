@@ -426,9 +426,8 @@ img:hover {
 }
 
 .footer-container {
-
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footers-wrapper {
@@ -439,11 +438,31 @@ img:hover {
 
   h2 {
     font-weight: 300;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 300px;
     opacity: 0.7;
   }
+
+  .icon-link-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-wrapper {
+    width: 42px;
+    height: auto;
+    padding: 20px;
+    cursor: pointer;
+    filter: invert(3%) sepia(80%) saturate(6562%) hue-rotate(263deg) brightness(96%) contrast(96%);
+  }
+
+  .footer-image {
+    margin: auto;
+    width: 75px;
+  }
 }
+
+
 
 @media (max-width: 923px) {
   h1 {
@@ -488,5 +507,9 @@ img:hover {
     p {
       margin: 10px;
     }
+  }
+
+  .footers-wrapper .icon-wrapper {
+    padding: 10px;
   }
 }
