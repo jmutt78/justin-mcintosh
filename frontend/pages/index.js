@@ -72,6 +72,18 @@ const Home = ({ articles, categories, homepage }) => {
             return <Project project={project} />
           })}
         </div>
+        <div className="cta-container">
+          <h2>Interested in working together?</h2>
+
+          <a
+            href="mailto:justinmcintosh7897@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="drop-link"
+          >
+            Drop Me a Line
+          </a>
+        </div>
         <Footer />
       </div>
     </Layout>

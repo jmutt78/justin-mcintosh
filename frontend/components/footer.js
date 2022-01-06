@@ -37,8 +37,8 @@ const Footer = () => {
   //   ]
 
   return (
-    <div>
-      <div>
+    <div className="footer-container">
+      <div className="footers-wrapper">
         <h2>Never Giving Up.</h2>
         <div>
           {/* {social.map(({ image, url, alt }) => (
@@ -63,7 +63,7 @@ const Footer = () => {
             title="photo3idea_studio"
           >
             photo3idea_studio
-          </a>{' '}
+          </a>
         </div>
       </div>
     </div>

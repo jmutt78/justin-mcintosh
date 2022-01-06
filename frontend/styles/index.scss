@@ -296,11 +296,11 @@ img:hover {
   max-width: 900px;
   align-self: center;
   width: 100%;
-  padding: 100px 0px 50px 0px;
+  padding: 50px 0px 60px 0px;
 
   h2 {
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     line-height: 1.125;
     font-size: 2rem !important;
     display: inline-block;
@@ -310,7 +310,7 @@ img:hover {
 }
 
 .project-container {
-  margin: 20px;
+  margin: 50px 50px 30px 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -324,14 +324,27 @@ img:hover {
 .liner {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 0px 20px 20px 20px;
   width: 300px;
+  height: 330px;
+}
+
+.liner:hover {
+  .image-container {
+    opacity: .2;
+    transition: "transform 350ms ease"
+  }
+
+  .project-info {
+    z-index: 1;
+    transition: "transform 350ms ease";
+    transform: "translate3d(0,50px,0)";
+  }
 
 }
 
 .project-wrapper {
   border: 3px solid #1c0947;
-  margin-bottom: 10px;
 }
 
 .toolbar {
@@ -342,12 +355,94 @@ img:hover {
 }
 
 .square {
-
   width: 10px;
   height: 10px;
   background-color: #f97304;
   margin: 0px 5px;
   border-radius: 5px;
+}
+
+
+.project-info {
+  margin-top: -290px;
+  padding: 10px;
+
+  h3 {
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.stack-container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.git-link {
+  border: 1px solid #1c0947;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #1c0947;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+
+  h2 {
+    margin: auto;
+  }
+
+  a {
+    margin: 10px auto;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    border: 1.5px solid rgb(249, 115, 4);
+    outline: none;
+    transition: all 500ms ease-in-out 0s;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(249, 115, 4);
+    padding: 5px;
+  }
+
+  a:hover {
+    background: rgb(249, 115, 4);
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.footer-container {
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footers-wrapper {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+
+  h2 {
+    font-weight: 300;
+    margin: 2rem auto;
+    max-width: 300px;
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: 923px) {
@@ -362,6 +457,15 @@ img:hover {
 }
 
 @media (max-width: 500px) {
+
+  .liner {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .project-info {
+    margin-top: -284px;
+  }
+
   h1 {
     font-size: 100px;
   }

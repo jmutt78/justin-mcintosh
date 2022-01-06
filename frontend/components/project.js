@@ -28,12 +28,18 @@ const Project = ({ project: { title, image, body, url, stack, git } }) => {
           <h3>{title}</h3>
         </a>
         <p>{body}</p>
-        <div>
-          <h4>Stack:</h4> <p> {stack}</p>
+        <div className="stack-container">
+          <p style={{ fontWeight: '600', marginRight: '5px' }}>Stack:</p>
+          <p> {stack}</p>
         </div>
         {git && (
-          <a href={git} target="_blank" rel="noopener noreferrer">
-            Code
+          <a
+            href={git}
+            className="git-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         )}
       </div>
