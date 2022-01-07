@@ -57,19 +57,14 @@ img:hover {
 
 
 .profile-container {
-  margin-top: 30px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 350px;
 
   img {
-    display: flex;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    border-radius: 15px;
   }
 }
 
@@ -169,7 +164,6 @@ img:hover {
 .title-container {
   display: flex;
   padding-top: 30px;
-  margin-bottom: 20px;
 
   h2 {
     margin: 0 auto;

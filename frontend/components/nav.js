@@ -26,7 +26,7 @@ const Nav = ({ categories }) => {
         </div>
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">
-            {categories.map((category) => {
+            {/* {categories.map((category) => {
               return (
                 <li key={category.id}>
                   <Link href={`/category/${category.attributes.slug}`}>
@@ -34,7 +34,7 @@ const Nav = ({ categories }) => {
                   </Link>
                 </li>
               )
-            })}
+            })} */}
           </ul>
         </div>
       </nav>
