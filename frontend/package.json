@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "deploy": "next build && next export",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    // "lint": "next lint",
+    // "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "moment": "^2.24.0",
@@ -25,10 +25,10 @@
   "license": "MIT",
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.2",
-    "eslint": "^7.30.0",
-    "eslint-config-next": "^11.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    // "eslint": "^7.30.0",
+    // "eslint-config-next": "^11.0.1",
+    // "eslint-config-prettier": "^8.3.0",
+    // "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.1"
   }
 }
