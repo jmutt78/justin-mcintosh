@@ -1,3 +1,2 @@
-# Strapi application
-
-A quick description of your strapi application
+#Deploy
+git subtree push --prefix backend heroku master
