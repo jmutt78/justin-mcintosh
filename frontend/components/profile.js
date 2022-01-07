@@ -2,7 +2,7 @@ import { getStrapiMedia } from '../lib/media'
 import NextImage from 'next/image'
 
 const Profile = ({ avatar }) => {
-  const { url, alternativeText, width, height } = avatar.data.attributes
+  const { alternativeText } = avatar.data.attributes
 
   return (
     <NextImage

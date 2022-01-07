@@ -13,7 +13,7 @@ import Project from '../components/project'
 import { fetchAPI } from '../lib/api'
 import { getStrapiMedia } from '../lib/media'
 
-const Home = ({ articles, categories, homepage }) => {
+const Home = ({ categories, homepage }) => {
   const profile = homepage.attributes.profile
   const landscape = homepage.attributes.landscape
   const logo = homepage.attributes.logo
@@ -68,8 +68,12 @@ const Home = ({ articles, categories, homepage }) => {
         </div>
         <Title title="Projects" />
         <div className="project-container">
-          {projects.map((project) => {
-            return <Project project={project} />
+          {projects.map((project, index) => {
+            return (
+              <div key={index}>
+                <Project project={project} />
+              </div>
+            )
           })}
         </div>
         <div className="cta-container">
